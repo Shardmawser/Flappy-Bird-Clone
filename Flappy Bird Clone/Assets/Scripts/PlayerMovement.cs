@@ -40,6 +40,9 @@ public class PlayerMovement : MonoBehaviour
         if(rb.velocity.y < fallThreshold)
         {
             rb.rotation = Mathf.Lerp(rb.rotation, -45f, tiltTime * Time.deltaTime);
+        } else if(rb.velocity.y > fallThreshold)
+        {
+            rb.rotation = Mathf.Lerp(rb.rotation, 45f, tiltTime * Time.deltaTime);
         }
     }
 }
