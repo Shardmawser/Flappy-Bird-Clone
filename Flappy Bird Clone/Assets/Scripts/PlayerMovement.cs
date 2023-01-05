@@ -11,6 +11,8 @@ public class PlayerMovement : MonoBehaviour
     public float tiltTime = 10f;
     public float fallThreshold = 3f;
 
+    public float tiltAngle = 45f;
+
     Vector2 dir;
 
     // Start is called before the first frame update
@@ -39,10 +41,10 @@ public class PlayerMovement : MonoBehaviour
     {
         if(rb.velocity.y < fallThreshold)
         {
-            rb.rotation = Mathf.Lerp(rb.rotation, -45f, tiltTime * Time.deltaTime);
+            rb.rotation = Mathf.Lerp(rb.rotation, -tiltAngle, tiltTime * Time.deltaTime);
         } else if(rb.velocity.y > fallThreshold)
         {
-            rb.rotation = Mathf.Lerp(rb.rotation, 45f, tiltTime * Time.deltaTime);
+            rb.rotation = Mathf.Lerp(rb.rotation, tiltAngle, tiltTime * Time.deltaTime);
         }
     }
 }
