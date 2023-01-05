@@ -492,4 +492,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c16c412efd8139e48a14015a03da2084, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpForce: 3
+  jumpForce: 10
