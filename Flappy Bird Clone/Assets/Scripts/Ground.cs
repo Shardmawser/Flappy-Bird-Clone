@@ -8,6 +8,9 @@ public class Ground : MonoBehaviour
     public Transform resetPos;
     public float offset;
 
+
+    public float groundSpeed;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -21,5 +24,13 @@ public class Ground : MonoBehaviour
         {
             transform.position = resetPos.position;
         }
+
+        Move();
+    }
+
+    
+    void Move()
+    {
+        transform.Translate(transform.right * groundSpeed * -1 * Time.deltaTime);
     }
 }
