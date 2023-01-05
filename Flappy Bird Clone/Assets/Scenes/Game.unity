@@ -414,6 +414,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ground: {fileID: 1450189743}
   resetPos: {fileID: 243313912}
+  offset: 3.25
 --- !u!4 &922001778
 Transform:
   m_ObjectHideFlags: 0

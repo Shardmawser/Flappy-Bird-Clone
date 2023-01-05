@@ -7,6 +7,7 @@ public class GameManager : MonoBehaviour
     Vector2 screenBounds;
     public GameObject ground;
     public Transform resetPos;
+    public float offset;
 
     // Start is called before the first frame update
     void Start()
@@ -17,7 +18,7 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(ground.transform.position.x < screenBounds.x * -1)
+        if(ground.transform.position.x + offset < screenBounds.x * -1)
         {
             ground.transform.position = resetPos.position;
         }
