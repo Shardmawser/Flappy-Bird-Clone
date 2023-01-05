@@ -493,5 +493,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   jumpForce: 10
-  tiltTime: 10
-  fallThreshold: -1
+  tiltTime: 5
+  fallThreshold: 0
+  tiltAngle: 25
